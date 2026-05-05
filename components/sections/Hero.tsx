@@ -31,7 +31,7 @@ export function Hero() {
             <div className="mt-10 flex flex-wrap items-center gap-5">
               <Link
                 href="/boutique"
-                className="group inline-flex items-center gap-2 rounded-pill bg-accent px-8 py-4 font-body text-base font-medium text-bg-base shadow-magic transition-transform duration-200 will-change-transform hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+                className="group inline-flex items-center gap-2 rounded-pill bg-accent px-8 py-4 font-body text-base font-medium text-ink shadow-magic transition-[transform,background-color] duration-200 will-change-transform hover:scale-[1.03] hover:bg-accent-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
               >
                 Découvrir nos boîtes
                 <span

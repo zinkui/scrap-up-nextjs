@@ -26,7 +26,7 @@ export default function BoutiquePage() {
           directement à{" "}
           <a
             href="mailto:info@scrap-up.fr"
-            className="font-medium text-ink underline decoration-accent decoration-2 underline-offset-4 transition-colors hover:text-accent"
+            className="font-medium text-ink underline decoration-accent decoration-2 underline-offset-4 transition-[text-decoration-thickness,text-decoration-color] duration-200 hover:decoration-accent-hover hover:decoration-4"
           >
             info@scrap-up.fr
           </a>{" "}
@@ -36,7 +36,7 @@ export default function BoutiquePage() {
         <div className="mt-12">
           <Link
             href="/"
-            className="group inline-flex items-center gap-2 rounded-pill bg-accent px-8 py-4 font-body text-base font-medium text-bg-base shadow-magic transition-transform duration-200 will-change-transform hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+            className="group inline-flex items-center gap-2 rounded-pill bg-accent px-8 py-4 font-body text-base font-medium text-ink shadow-magic transition-[transform,background-color] duration-200 will-change-transform hover:scale-[1.03] hover:bg-accent-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           >
             <span
               aria-hidden

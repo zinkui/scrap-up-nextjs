@@ -80,16 +80,37 @@
 
 ### Palette
 ```css
+/* Backgrounds */
 --bg-base: #FDF9F3;        /* crème poudré */
+--bg-elevated: #FFFCF7;    /* cartes, modals */
+--bg-warm: #F5EDE0;        /* sections alternées */
+
+/* Encres */
 --ink: #1A1A2E;            /* noir profond bleuté */
+--ink-soft: #3A3A52;       /* corps de texte */
+--ink-mute: #6E6E85;       /* meta, captions */
+
+/* Pastels saturés (mesh & accents) */
 --rose-poudre: #F4C2C2;
 --lavande: #D4C5E2;
 --champagne: #E8D5A8;
 --mint-fee: #B8E0D2;
---accent-magique: #6B4FBB; /* violet profond pour CTA */
---shadow-magic: rgba(107, 79, 187, 0.15);
+
+/* Accent principal — rose framboise */
+--accent: #E94B7C;          /* CTA, "étoiles" handwritten */
+--accent-hover: #D63E6F;    /* deeper hover */
+--accent-soft: #FCE4ED;     /* tint pâle, fonds légers */
+--accent-glow: rgba(233, 75, 124, 0.18);
+
+/* Accent secondaire — gold éditorial */
+--gold: #C9A35E;
+--gold-soft: #F5E8C8;
+
+/* Ombres */
+--shadow-soft: 0 1px 2px rgba(26,26,46,0.06), 0 8px 24px rgba(26,26,46,0.04);
+--shadow-magic: 0 8px 32px rgba(233, 75, 124, 0.18);
 ```
-> Pastels saturés, jamais délavés. Noir profond pour le texte.
+> Pastels saturés, jamais délavés. Noir profond pour le texte. Accent rose framboise = signature CTA + emphase. Gold = accent secondaire éditorial (badges premium, séparateurs, futurs ribbons).
 
 ### Layout
 - Asymétrie volontaire, breaks de grille

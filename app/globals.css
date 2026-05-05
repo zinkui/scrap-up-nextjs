@@ -18,13 +18,18 @@
   --color-mint-fee: #B8E0D2;
 
   /* === ACCENT MAGIQUE (CTA) === */
-  --color-accent: #5B3A9E;        /* aubergine profond */
-  --color-accent-soft: #7E5BC2;   /* hover */
-  --color-accent-glow: rgba(91, 58, 158, 0.18);
+  --color-accent: #E94B7C;        /* rose framboise saturé */
+  --color-accent-hover: #D63E6F;  /* hover plus profond */
+  --color-accent-soft: #FCE4ED;   /* tint pâle, fonds légers */
+  --color-accent-glow: rgba(233, 75, 124, 0.18);
+
+  /* === GOLD (accent secondaire) === */
+  --color-gold: #C9A35E;
+  --color-gold-soft: #F5E8C8;
 
   /* === OMBRES === */
   --shadow-soft: 0 1px 2px rgba(26, 26, 46, 0.06), 0 8px 24px rgba(26, 26, 46, 0.04);
-  --shadow-magic: 0 8px 32px rgba(91, 58, 158, 0.18);
+  --shadow-magic: 0 8px 32px rgba(233, 75, 124, 0.18);
 
   /* === TYPOGRAPHIE === */
   --font-display: var(--font-fraunces);
