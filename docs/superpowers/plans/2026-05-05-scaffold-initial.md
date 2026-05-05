@@ -26,14 +26,16 @@
 
 **Refs visuelles cibles :** Smallable (rigueur commerciale), Bonjour Maurice (chaleur), Milk Magazine / Mon Petit Art (gravitas éditoriale).
 
-**Direction esthétique du Hero :**
+**Direction esthétique du Hero (verrouillée) :**
 - Asymétrie : photo qui déborde à droite, texte calé à gauche dans une grille 12 colonnes
-- Mesh gradient ambré→rose pâle qui respire (animation 24s ease-in-out, pure CSS)
-- Overlay grain noise (SVG inline sur `body::after`)
-- Headline en Fraunces SOFT 100, italic stagger sur le mot "fête"
-- Sub en Manrope, ink-soft
-- Petit "✨" en Homemade Apple posé en accent au-dessus de la headline
-- CTA "Découvrir nos boîtes" en accent-magique avec hover scale 1.03 (transform only)
+- Mesh gradient (rose poudré + champagne + lavande) qui respire (animation 24s ease-in-out, pure CSS)
+- Overlay grain noise (SVG inline)
+- **Headline EXACTE** (tagline officielle) : *« Une boîte, une fête, des étoiles plein la tête. »*
+- **Le seul mot en Homemade Apple = "étoiles"** (`text-accent`, légère rotation -3deg, taille 0.92em). Tout le reste du headline en Fraunces. Pas de pré-titre handwritten (éviterait la duplication tagline). Pas de caption handwritten sur la photo. **1 seule occurrence handwritten dans tout le hero.**
+- **Sub** en Manrope, ink-soft : *« Pensées pour transformer chaque anniversaire en un moment magique. Pack de 8, livraison gratuite dès 50 €. »*
+- **CTA principal** "Découvrir nos boîtes" en accent-magique, hover scale 1.03 (transform only) → `/boutique` (404 attendu au scaffold)
+- **Lien secondaire** "Voir les thèmes" → `#themes`
+- **Strip USP discret SOUS le CTA** : *« ⚡ Commande avant 12h → expédition le jour-même »* — Manrope sm, ink-mute, pill avec bordure et fond `bg-elevated/60` + backdrop-blur
 
 ---
 
@@ -721,18 +723,18 @@ export function Hero() {
         {/* Colonne texte — 7 cols sur desktop */}
         <div className="md:col-span-7 md:pr-8">
           <HeroReveal>
-            <span className="font-handwritten text-2xl text-accent md:text-3xl">
-              ✶ une boîte, une fête
-            </span>
-            <h1 className="mt-6 font-display text-5xl leading-[0.95] tracking-tight text-ink sm:text-6xl md:text-7xl lg:text-8xl">
-              Des étoiles{" "}
-              <em className="font-display italic text-accent">plein la tête</em>{" "}
-              à chaque anniversaire.
+            <h1 className="font-display text-5xl leading-[0.95] tracking-tight text-ink sm:text-6xl md:text-7xl lg:text-8xl">
+              Une boîte, une fête,
+              <br />
+              des{" "}
+              <em className="font-handwritten not-italic text-accent text-[0.92em] inline-block -rotate-3 align-baseline">
+                étoiles
+              </em>{" "}
+              plein la tête.
             </h1>
             <p className="mt-8 max-w-xl font-body text-lg leading-relaxed text-ink-soft md:text-xl">
-              Boîtes cadeau pensées pour transformer chaque anniversaire enfant
-              en moment magique. Pack de 8, livraison gratuite dès 50 €,
-              expédition le jour-même avant 12 h.
+              Pensées pour transformer chaque anniversaire en un moment magique.
+              Pack de 8, livraison gratuite dès 50 €.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-5">
               <Link
@@ -740,7 +742,12 @@ export function Hero() {
                 className="group inline-flex items-center gap-2 rounded-pill bg-accent px-8 py-4 font-body text-base font-medium text-bg-base shadow-magic transition-transform duration-200 will-change-transform hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
               >
                 Découvrir nos boîtes
-                <span aria-hidden className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+                <span
+                  aria-hidden
+                  className="transition-transform duration-200 group-hover:translate-x-1"
+                >
+                  →
+                </span>
               </Link>
               <Link
                 href="#themes"
@@ -749,10 +756,17 @@ export function Hero() {
                 Voir les thèmes
               </Link>
             </div>
+            {/* USP strip discret sous le CTA */}
+            <div className="mt-6 inline-flex items-center gap-2 rounded-pill border border-ink/10 bg-bg-elevated/60 px-4 py-2 backdrop-blur-sm">
+              <span aria-hidden className="text-base">⚡</span>
+              <span className="font-body text-sm text-ink-mute">
+                Commande avant 12h → expédition le jour-même
+              </span>
+            </div>
           </HeroReveal>
         </div>
 
-        {/* Colonne photo — 5 cols, déborde légèrement à droite */}
+        {/* Colonne photo — 5 cols, déborde légèrement à droite, sans caption */}
         <div className="relative md:col-span-5">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl shadow-soft md:-mr-12 md:aspect-[3/4]">
             <Image
@@ -764,18 +778,20 @@ export function Hero() {
               className="object-cover"
             />
           </div>
-          <span
-            aria-hidden
-            className="pointer-events-none absolute -bottom-6 -left-6 hidden font-handwritten text-2xl text-ink-mute md:block"
-          >
-            ★ pack de 8
-          </span>
         </div>
       </div>
     </section>
   );
 }
 ```
+
+> **Règles handwritten verrouillées (vérifier en revue) :**
+> - 1 seule classe `font-handwritten` dans tout le composant Hero (sur l'`<em>` "étoiles")
+> - Pas de pré-titre, pas de caption photo, pas d'autre accent script
+> - `not-italic` car Homemade Apple a déjà sa pente naturelle
+> - `text-[0.92em]` pour compenser la x-height plus basse du script vs Fraunces
+> - `-rotate-3` pour le feel "annotation manuscrite" sans casser la baseline
+> - `align-baseline` pour éviter un saut de ligne sur navigateurs anciens
 
 > **Note importante** : la photo Unsplash citée doit être **vérifiée disponible** au moment du scaffold. Si erreur 404, fallback vers `https://images.unsplash.com/photo-1513151233558-d860c5398176?w=1200&q=80&auto=format&fit=crop`. Si Unsplash bloque le hotlink, télécharger une image dans `public/hero-placeholder.jpg` et ajuster le src. Documenter le source dans un commentaire.
 
@@ -906,14 +922,31 @@ test.describe("Home page hero", () => {
   test("loads with headline, sub, CTA and image", async ({ page }) => {
     await page.goto("/");
 
-    // Headline (présence du H1 + texte clé)
+    // Headline (tagline complète présente, dans le H1)
     const h1 = page.locator("h1");
     await expect(h1).toBeVisible();
+    await expect(h1).toContainText("Une boîte, une fête");
+    await expect(h1).toContainText("étoiles");
     await expect(h1).toContainText("plein la tête");
 
-    // Sub-paragraphe
+    // Vérifier que "étoiles" est bien le seul mot en handwritten (1 seule occurrence)
+    const handwrittenEm = page.locator("h1 em");
+    await expect(handwrittenEm).toHaveCount(1);
+    await expect(handwrittenEm).toHaveText("étoiles");
+
+    // Sub-paragraphe (nouveau wording)
     await expect(
-      page.getByText("Boîtes cadeau pensées pour transformer", { exact: false })
+      page.getByText("Pensées pour transformer chaque anniversaire", {
+        exact: false,
+      })
+    ).toBeVisible();
+    await expect(
+      page.getByText("livraison gratuite dès 50", { exact: false })
+    ).toBeVisible();
+
+    // Strip USP sous le CTA
+    await expect(
+      page.getByText("Commande avant 12h", { exact: false })
     ).toBeVisible();
 
     // CTA principal
