@@ -26,11 +26,6 @@ test.describe("Home page hero", () => {
       page.getByText("livraison gratuite dès 50", { exact: false })
     ).toBeVisible();
 
-    // Strip USP sous le CTA
-    await expect(
-      page.getByText("Commande avant 12h", { exact: false })
-    ).toBeVisible();
-
     // CTA principal
     const cta = page.getByRole("link", { name: /Découvrir nos boîtes/i });
     await expect(cta).toBeVisible();

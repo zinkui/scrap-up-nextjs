@@ -13,7 +13,6 @@
 - **Prix moyen** : 24,95 € – 26,95 € (pack de 8 unités) / 9,50 € (centres de table)
 - **USPs** :
   - Livraison gratuite dès 50 €
-  - Commande avant 12h00 → expédition le jour-même
   - Pack de 8 (parfait pour toute la classe)
   - Option remplie/vide (bonbons fournis par Val Gourmand)
   - Thèmes sur mesure (info@scrap-up.fr)

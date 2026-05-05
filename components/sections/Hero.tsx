@@ -48,13 +48,6 @@ export function Hero() {
                 Voir les thèmes
               </Link>
             </div>
-            {/* USP strip discret sous le CTA */}
-            <div className="mt-6 inline-flex items-center gap-2 rounded-pill border border-ink/10 bg-bg-elevated/60 px-4 py-2 backdrop-blur-sm">
-              <span aria-hidden className="text-base">⚡</span>
-              <span className="font-body text-sm text-ink-mute">
-                Commande avant 12h → expédition le jour-même
-              </span>
-            </div>
           </HeroReveal>
         </div>
 
