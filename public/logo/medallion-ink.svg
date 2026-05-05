@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" role="img" aria-label="Scrap-up Studio · médaillon">
+  <defs>
+    <path id="topArc" d="M 70 70 m -52 0 a 52 52 0 0 1 104 0" fill="none"></path>
+    <path id="botArc" d="M 70 70 m -48 0 a 48 48 0 0 0 96 0" fill="none"></path>
+  </defs>
+  
+  
+  <circle cx="70" cy="70" r="56" fill="none" stroke="#1A1A2E" stroke-width="1.4"></circle>
+  <circle cx="70" cy="70" r="51" fill="none" stroke="#1A1A2E" stroke-width="0.5" stroke-dasharray="0.8 3.2"></circle>
+  <text font-family="Manrope, &#39;Helvetica Neue&#39;, Arial, sans-serif" font-size="7" font-weight="600" letter-spacing="2.4" fill="#1A1A2E" text-anchor="middle">
+    <textPath href="#topArc" startOffset="50%">SCRAP-UP STUDIO</textPath>
+  </text>
+  <text font-family="Manrope, &#39;Helvetica Neue&#39;, Arial, sans-serif" font-size="5.6" font-weight="500" letter-spacing="1.6" fill="#1A1A2E" text-anchor="middle" opacity="0.6">
+    <textPath href="#botArc" startOffset="50%">FAIT À LA MAIN · FRANCE</textPath>
+  </text>
+  <text x="70" y="74" text-anchor="middle" font-family="&#39;Cormorant Garamond&#39;, &#39;Cormorant&#39;, Georgia, serif" font-size="19" font-weight="600" font-style="italic" fill="#1A1A2E" letter-spacing="-0.01em">Scrap-up</text>
+  <path d="M 70 52.8 L 70.96 55.04 L 73.2 56 L 70.96 56.96 L 70 59.2 L 69.04 56.96 L 66.8 56 L 69.04 55.04 Z" fill="#E94B7C" opacity="1"></path>
+  <path d="M 70 85.6 L 70.72 87.28 L 72.4 88 L 70.72 88.72 L 70 90.4 L 69.28 88.72 L 67.6 88 L 69.28 87.28 Z" fill="#E94B7C" opacity="0.65"></path>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Made in France · signature-reverse">
+  <title>Scrap-up · Made in France · signature-reverse</title>
+  <defs>
+    <path id="topArc-signature-reverse" d="M 60 60 m -46 0 a 46 46 0 0 1 92 0" fill="none"></path>
+    <path id="botArc-signature-reverse" d="M 60 60 m -42 0 a 42 42 0 0 0 84 0" fill="none"></path>
+  </defs>
+  
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#FDF9F3" stroke-width="1.2"></circle>
+  <circle cx="60" cy="60" r="51" fill="none" stroke="#FDF9F3" stroke-width="0.5" stroke-dasharray="0.6 3" stroke-linecap="round"></circle>
+  <text font-family="Manrope, system-ui, sans-serif" font-size="8.4" font-weight="600" letter-spacing="2.2" fill="#FDF9F3" text-anchor="middle">
+    <textPath href="#topArc-signature-reverse" startOffset="50%">MADE IN FRANCE</textPath>
+  </text>
+  <text font-family="Manrope, system-ui, sans-serif" font-size="6.4" font-weight="500" letter-spacing="1.6" fill="#FDF9F3" text-anchor="middle" opacity="0.7">
+    <textPath href="#botArc-signature-reverse" startOffset="50%">ARTISANAT · DEPUIS 2024</textPath>
+  </text>
+  <g transform="translate(60 60)" color="#FDF9F3">
+<text font-family="&#39;Homemade Apple&#39;, cursive" font-size="13" text-anchor="middle" dominant-baseline="middle" fill="currentColor" transform="rotate(-4) translate(0 2)">Scrap-up</text>
+<g stroke="currentColor" stroke-width="0.6" stroke-linecap="round" fill="none" opacity="0.6">
+  <path d="M -22 14 Q 0 18 22 14"></path>
+</g>
+<g fill="currentColor">
+  <circle cx="-26" cy="-2" r="0.9"></circle>
+  <circle cx="26" cy="-2" r="0.9"></circle>
+</g></g>
+</svg>

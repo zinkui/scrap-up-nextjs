@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" role="img" aria-label="Scrap-up Studio">
+  <rect width="280" height="64" fill="#1A1A2E" rx="6"></rect>
+  
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#FDF9F3" stroke-width="1.4"></circle>
+  <circle cx="32" cy="32" r="24.5" fill="none" stroke="#FDF9F3" stroke-width="0.45" stroke-dasharray="0.8 3"></circle>
+  <text x="32" y="40" text-anchor="middle" font-family="&#39;Cormorant Garamond&#39;, Georgia, serif" font-size="20" font-weight="600" font-style="italic" fill="#FDF9F3" letter-spacing="-0.02em">S</text>
+  <path d="M 32 12 L 32.6 13.4 L 34 14 L 32.6 14.6 L 32 16 L 31.4 14.6 L 30 14 L 31.4 13.4 Z" fill="#F4C2C2"></path>
+  
+  <text x="68" y="36" font-family="&#39;Cormorant Garamond&#39;, Georgia, serif" font-size="30" font-weight="600" font-style="italic" fill="#FDF9F3" letter-spacing="-0.02em">Scrap-up</text>
+  <path d="M 218 21 L 218.9 23.1 L 221 24 L 218.9 24.9 L 218 27 L 217.1 24.9 L 215 24 L 217.1 23.1 Z" fill="#F4C2C2"></path>
+  <text x="68" y="52" font-family="Manrope, sans-serif" font-size="9" font-weight="500" letter-spacing="1.6" fill="#FDF9F3" opacity="0.7">STUDIO · FAIT À LA MAIN · FRANCE</text>
+</svg>
