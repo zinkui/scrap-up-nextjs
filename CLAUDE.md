@@ -103,8 +103,8 @@
 --accent-glow: rgba(233, 75, 124, 0.18);
 
 /* Accent secondaire — gold éditorial */
---gold: #C9A35E;
---gold-soft: #F5E8C8;
+--gold: #D4A961;
+--gold-soft: #F0DFB8;
 
 /* Ombres */
 --shadow-soft: 0 1px 2px rgba(26,26,46,0.06), 0 8px 24px rgba(26,26,46,0.04);
